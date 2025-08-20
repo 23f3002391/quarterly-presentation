@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Reveal.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
+
+  <!-- Syntax highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js/styles/monokai.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide 1 -->
+      <section>
+        <h2>Quarterly Earnings Report</h2>
+        <p>Email: <b>23f3002391@ds.study.iitm.ac.in</b></p>
+        <p><small>Presented with RevealJS</small></p>
+      </section>
+
+      <!-- Slide 2 (Markdown) -->
+      <section data-markdown="slides.md"
+               data-separator="^\n---\n$"
+               data-separator-vertical="^\n--\n$"
+               data-separator-notes="^Note:"></section>
+
+      <!-- Slide 3 (Animated fragments) -->
+      <section>
+        <h3>Key Highlights</h3>
+        <ul>
+          <li class="fragment">Revenue growth: <b>15%</b></li>
+          <li class="fragment">Expenses reduced by <b>8%</b></li>
+          <li class="fragment">Profit Margin: <b>22%</b></li>
+        </ul>
+      </section>
+
+      <!-- Slide 4 (Code syntax highlighting) -->
+      <section>
+        <h3>Sample Code</h3>
+        <pre><code class="language-python">
+import pandas as pd
+
+data = pd.read_csv("financials.csv")
+print(data.describe())
+        </code></pre>
+      </section>
+
+      <!-- Slide 5 (Math formulas) -->
+      <section>
+        <h3>Financial Formula</h3>
+        <p>Return on Investment (ROI):</p>
+        <p>$$ ROI = \frac{Net\ Profit}{Investment} \times 100 $$</p>
+      </section>
+
+      <!-- Slide 6 (Speaker Notes) -->
+      <section>
+        <h3>Future Outlook</h3>
+        <p>Focus on digital transformation and cost efficiency.</p>
+        <aside class="notes">
+          Stress the importance of strategic investments in Q3 and Q4.
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+    });
+  </script>
+</body>
+</html>
